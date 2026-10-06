@@ -6,6 +6,12 @@ Vini UI é a fonte de referência para decisões visuais reutilizáveis nas apli
 
 Esta revisão define somente a fundação. Nenhuma cor, medida, fonte, sombra ou desenho de ícone foi aprovado por meio deste scaffold.
 
+## Base visual aprovada
+
+**Aprovada em 6 de outubro de 2026.** O Vini UI parte de fundo claro levemente acinzentado, superfícies elevadas claras, bordas discretas, sombras suaves, cantos arredondados e profundidade visual sutil. Cores fortes comunicam principalmente função, estado ou identidade do aplicativo.
+
+Esta decisão descreve a direção do sistema. Seus valores concretos — tokens de cor, borda, sombra e border radius — serão definidos e aprovados em seguida.
+
 ## Terminologia
 
 Use termos técnicos estabelecidos e explique-os em português quando necessário. Apelidos informais ajudam na conversa, mas não substituem nomes canônicos nos arquivos e na documentação.
@@ -55,12 +61,12 @@ Uma nova definição deve registrar aqui sua função, valor ou asset, origem da
 
 | Categoria | Estado |
 | --- | --- |
-| Cores | A definir |
+| Cores | Base visual aprovada; valores a definir |
 | Espaçamento | A definir |
 | Tipografia | A definir |
-| Border radius | A definir |
+| Border radius | Direção aprovada; escala a definir |
 | Dimensões | A definir |
-| Sombras | A definir |
+| Sombras | Direção aprovada; valores a definir |
 | Ícones | A definir |
 | Componentes e variantes | A definir |
 
