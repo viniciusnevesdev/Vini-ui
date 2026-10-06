@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f5f5f7">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="light-content">
+  <meta name="apple-mobile-web-app-title" content="Vini UI">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icons/vini-ui.svg">
+  <link rel="stylesheet" href="showcase/showcase.css">
+  <title>Vini UI</title>
+</head>
+<body>
+  <main class="app-shell">
+    <header class="page-header">
+      <div>
+        <p class="eyebrow">LABORATÓRIO VISUAL</p>
+        <h1>Vini UI</h1>
+        <p class="intro">Experimento de <strong>border radius</strong>. Nada escolhido aqui vira regra até você aprovar.</p>
+      </div>
+      <span class="status">Em teste</span>
+    </header>
+
+    <section class="intro-card" aria-labelledby="purpose-title">
+      <p class="section-label">ESCOLHA ATUAL</p>
+      <h2 id="purpose-title">Quanto arredondamento parece certo?</h2>
+      <p>Troque a opção abaixo. Ela altera cards, botões, campos e a navegação inferior ao mesmo tempo.</p>
+    </section>
+
+    <section class="picker" aria-label="Opções de border radius">
+      <button class="scale-option" data-scale="compact" aria-pressed="false">
+        <span class="preview compact-preview"></span>
+        <span>Contido</span>
+        <small>16 px no card</small>
+      </button>
+      <button class="scale-option active" data-scale="balanced" aria-pressed="true">
+        <span class="preview balanced-preview"></span>
+        <span>Equilibrado</span>
+        <small>20 px no card</small>
+      </button>
+      <button class="scale-option" data-scale="expressive" aria-pressed="false">
+        <span class="preview expressive-preview"></span>
+        <span>Expressivo</span>
+        <small>24 px no card</small>
+      </button>
+    </section>
+
+    <section class="section" aria-labelledby="components-title">
+      <div class="section-heading">
+        <div>
+          <p class="section-label">PRÉVIA</p>
+          <h2 id="components-title">Componentes</h2>
+        </div>
+        <span id="scale-description" class="scale-description">Equilibrado</span>
+      </div>
+
+      <article class="demo-card primary-card">
+        <div class="demo-card__top">
+          <span class="icon-badge" aria-hidden="true">✦</span>
+          <button class="icon-button" type="button" aria-label="Mais opções">•••</button>
+        </div>
+        <h3>Resumo do dia</h3>
+        <p>Um card elevado para conteúdo importante, inspirado nos seus PWAs de referência.</p>
+        <div class="metric-row">
+          <div><span>Registros</span><strong>12</strong></div>
+          <div><span>Concluídos</span><strong>8</strong></div>
+          <div><span>Hoje</span><strong>67%</strong></div>
+        </div>
+      </article>
+
+      <div class="action-row">
+        <button class="button button--primary" type="button">Salvar alteração</button>
+        <button class="button button--secondary" type="button">Cancelar</button>
+      </div>
+
+      <label class="field">
+        <span>Nome do item</span>
+        <input type="text" value="Exemplo de campo" aria-label="Nome do item">
+      </label>
+
+      <article class="demo-card list-card">
+        <span class="list-icon" aria-hidden="true">⌁</span>
+        <div>
+          <h3>Item de lista</h3>
+          <p>Informação secundária e uma ação clara.</p>
+        </div>
+        <span class="chevron" aria-hidden="true">›</span>
+      </article>
+    </section>
+  </main>
+
+  <nav class="bottom-navigation" aria-label="Navegação de demonstração">
+    <button class="nav-item active" type="button"><span>⌂</span><small>Início</small></button>
+    <button class="nav-item" type="button"><span>▤</span><small>Lista</small></button>
+    <button class="nav-item nav-item--add" type="button" aria-label="Adicionar"><span>+</span></button>
+    <button class="nav-item" type="button"><span>◈</span><small>Análises</small></button>
+    <button class="nav-item" type="button"><span>⚙</span><small>Ajustes</small></button>
+  </nav>
+
+  <script src="showcase/showcase.js"></script>
+</body>
+</html>
