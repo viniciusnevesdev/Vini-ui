@@ -4,7 +4,7 @@
 
 Vini UI é a fonte de referência para decisões visuais reutilizáveis nas aplicações web de Vinicius. A documentação explica o uso; tokens, componentes e assets implementam decisões aprovadas. O showcase demonstra essas implementações, sem criar uma segunda versão delas.
 
-Esta revisão define somente a fundação. Nenhuma cor, medida, fonte, sombra ou desenho de ícone foi aprovado por meio deste scaffold.
+Esta revisão contém a fundação e sete tamanhos tipográficos aprovados pelo usuário. Valores concretos de cores, espaçamentos, raios, sombras e ícones permanecem em definição.
 
 ## Base visual aprovada
 
@@ -47,13 +47,11 @@ Escolha os nomes pela função e pelo comportamento, não apenas pela posição 
 
 ## Organização e nomes
 
-- Arquivos e identificadores técnicos em inglês; documentação e explicações podem permanecer em português.
-- Arquivos em kebab-case e CSS com prefixo `vui-` para reduzir colisões.
-- Custom properties usam `--vui-`; classes usam `.vui-`.
-- Exemplos de formato, ainda não definições: `--vui-space-1`, `--vui-color-text-primary`, `.vui-button`.
-- Valores de escalas ficam em tokens; componentes referenciam tokens aprovados.
-- Não crie uma escala numérica que sugira tons intermediários inexistentes.
-- Não substitua um nome canônico por um novo apelido em cada projeto.
+- Identificadores técnicos podem usar português; o usuário prefere nomes claros nessa língua.
+- Não há exigência aprovada de inglês ou de prefixos `vui-` / `--vui-`; a antiga imposição foi rejeitada.
+- Preservar nomes existentes em arquivos funcionais quando a renomeação afetar compatibilidade.
+- Exemplo aprovado: `--fonte-corpo: 14px`. Não criar novos tamanhos ou cores quase idênticos sem motivo real.
+- Valores compartilhados pertencem aos arquivos de tokens; componentes os reutilizam.
 
 ## Aprovação de decisões
 
@@ -63,7 +61,7 @@ Uma nova definição deve registrar aqui sua função, valor ou asset, origem da
 | --- | --- |
 | Cores | Base visual aprovada; valores a definir |
 | Espaçamento | A definir |
-| Tipografia | A definir |
+| Tipografia | Sete tamanhos aprovados, implementados em `tokens/typography.css`; pesos e famílias ainda a definir |
 | Border radius | Direção aprovada; escala a definir |
 | Dimensões | A definir |
 | Sombras | Direção aprovada; valores a definir |
@@ -71,6 +69,22 @@ Uma nova definição deve registrar aqui sua função, valor ou asset, origem da
 | Componentes e variantes | A definir |
 
 Adicione somente definições úteis ao uso real. Uma necessidade específica de um app permanece no app até justificar reutilização no sistema.
+
+## Tipografia — aprovada em 17/11/2026
+
+Escala compacta: sete tamanhos CSS com funções distintas. A escolha deriva da preferência do usuário pela hierarquia visual no estilo Apple e da comparação de amostras.
+
+| Token | Valor | Finalidade |
+| --- | ---: | --- |
+| `--fonte-navegacao` | 11px | Navegação inferior |
+| `--fonte-legenda` | 12px | Legendas e metadados |
+| `--fonte-corpo` | 14px | Texto principal, botões e controles |
+| `--fonte-campo` | 16px | Textos digitáveis (input, textarea, select); reduz zoom de foco no Safari iPhone |
+| `--fonte-secao` | 18px | Títulos de seção |
+| `--fonte-titulo` | 24px | Títulos de página e números de prévias pequenas |
+| `--fonte-destaque` | 30px | Números de estatísticas em destaque |
+
+Evitar tamanhos quase iguais por componente. Preservar adaptações de acessibilidade e exceções justificadas. Em comparações visuais, colocar nome e tamanho fora da amostra, mantendo os rótulos em formatação constante.
 
 ## Contrato dos componentes
 
