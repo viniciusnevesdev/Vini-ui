@@ -7,10 +7,10 @@ Este repositório contém o Vini UI. Leia README.md, DESIGN-SYSTEM.md e os READM
 ## Regras
 
 - Mantenha terminologia técnica estabelecida. Explique apelidos sem promovê-los a nomes canônicos.
-- A fundação não contém valores visuais aprovados. Comentários e exemplos de nomes não são tokens implementados.
+- Os sete tamanhos tipográficos estão aprovados e implementados em tokens/typography.css; outras famílias ainda estão em definição.
 - Não invente preferências do usuário. Identifique propostas e obtenha escolhas reais antes de registrá-las como aprovadas.
-- Reutilize tokens, componentes e ícones existentes antes de adicionar equivalentes.
-- Use prefixo vui- em classes e --vui- em custom properties.
+- Reutilize tokens, componentes e ícones existentes antes de adicionar equivalentes. Evite duplicações de fontes, cores, raios e espaçamentos quase iguais.
+- Não impor inglês nem prefixos obrigatórios. Reutilizar os sete tokens --fonte-* em português.
 - Component tokens são permitidos quando necessários; evite duplicação sem função.
 - Separe variantes de estados e componentes de patterns.
 - Mantenha particularidades de um aplicativo fora do sistema, salvo justificativa de reutilização.
