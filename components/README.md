@@ -12,4 +12,4 @@ Pontos de entrada reservados:
 
 Os arquivos contêm apenas comentários: não existem componentes implementados ou variantes aprovadas.
 
-Ao implementar, use classes vui-, referencie tokens aprovados e documente o contrato HTML, variantes, estados, comportamento e acessibilidade. Se uma implementação exigir JavaScript, mantenha-o junto ao componente e documente sua inicialização. Não faça comportamentos existirem somente no showcase.
+Ao implementar, use nomes técnicos claros sem prefixo obrigatório, referencie tokens aprovados e documente o contrato HTML, variantes, estados, comportamento e acessibilidade. Se uma implementação exigir JavaScript, mantenha-o junto ao componente e documente sua inicialização. Não faça comportamentos existirem somente no showcase.
