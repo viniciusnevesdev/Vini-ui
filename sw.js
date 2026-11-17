@@ -1,5 +1,5 @@
-const CACHE = 'vini-ui-lab-v1';
-const FILES = ['./', './index.html', './manifest.webmanifest', './showcase/showcase.css', './showcase/showcase.js', './icons/vini-ui.svg'];
+const CACHE = 'vini-ui-lab-v2';
+const FILES = ['./', './index.html', './manifest.webmanifest', './showcase/showcase.css', './tokens/typography.css', './showcase/showcase.js', './icons/vini-ui.svg'];
 
 self.addEventListener('install', (event) => {
   event.waitUntil(caches.open(CACHE).then((cache) => cache.addAll(FILES)));
