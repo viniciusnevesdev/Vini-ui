@@ -2,7 +2,7 @@
 
 Design system pessoal para aplicações web de Vinicius.
 
-**Estado: fundação.** A estrutura e as regras estão definidas; valores visuais, ícones e componentes ainda aguardam escolhas reais. Os arquivos CSS são pontos de entrada vazios, não uma biblioteca pronta para produção.
+**Estado: fundação com tipografia aprovada.** Sete tamanhos em português já foram implementados. Cores, raios, espaçamentos e componentes reutilizáveis ainda precisam de escolhas. Existe um laboratório visual, mas não uma biblioteca completa e estável.
 
 ## Estrutura
 
@@ -13,7 +13,7 @@ Design system pessoal para aplicações web de Vinicius.
 | [tokens/](tokens/) | Valores reutilizáveis e seus significados |
 | [components/](components/) | Estilos e contratos de componentes |
 | [icons/](icons/) | Assets SVG aprovados |
-| [showcase/](showcase/) | Futuro catálogo visual dos componentes reais |
+| [showcase/](showcase/) | Laboratório de raios experimentais e tipografia aprovada |
 
 ## Como orientar uma IA
 
@@ -23,7 +23,7 @@ Um link sozinho não garante que uma IA consiga consultar os arquivos. Se necess
 
 ## Próximas decisões
 
-1. Definir cores, espaçamento, tipografia, raios e dimensões a partir de escolhas aprovadas.
+1. Definir cores, espaçamentos, raios e dimensões restantes; tipografia já implementada em tokens/typography.css.
 2. Adicionar os SVGs aprovados para ações recorrentes.
 3. Implementar Button, Icon button, Card e Bottom navigation.
 4. Demonstrar os componentes no showcase usando os mesmos arquivos.
@@ -36,4 +36,4 @@ Registre no projeto consumidor o commit do Vini UI utilizado. Nesta fase, copie 
 
 Alterar o Vini UI **não atualiza automaticamente** aplicações que copiaram seus arquivos. Atualizar essas aplicações exige incorporar a nova revisão e verificar o resultado. Uma distribuição versionada poderá ser adotada quando houver componentes estáveis.
 
-Ainda não existe PWA, publicação, pacote ou versão estável.
+Já existe laboratório visual com index.html e service worker. Ainda não existe biblioteca estável para distribuição geral.
