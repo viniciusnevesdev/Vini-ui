@@ -11,6 +11,6 @@ Arquivos reservados para decisões aprovadas:
 | sizing.css | Dimensões de controles e ícones |
 | shadows.css | Sombras |
 
-Nenhum valor está definido nesta revisão. O arquivo index.css reúne as categorias, mas importar este scaffold ainda não aplica um tema.
+Tipografia já definida em sete tokens de typography.css, importados em index.css. As demais categorias continuam sem valores finais e ainda não há tema completo.
 
-Use primitive tokens para valores fundamentais e semantic tokens para funções. Component tokens podem referenciar essas definições quando uma decisão específica exigir. Prefixo: --vui-.
+Os tokens de tipografia usam nomes em português sem prefixo obrigatório. Component tokens continuam permitidos quando houver uma função real, evitando duplicação desnecessária.
