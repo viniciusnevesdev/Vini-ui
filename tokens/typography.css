@@ -1,3 +1,10 @@
-/* Vini UI — Tipografia.
- * A definir: nenhum valor aprovado. Prefixo das custom properties: --vui-.
- */
+/* Vini UI — tipografia aprovada pelo usuário; nomes em português. */
+:root {
+  --fonte-navegacao: 11px;
+  --fonte-legenda: 12px;
+  --fonte-corpo: 14px;
+  --fonte-campo: 16px;
+  --fonte-secao: 18px;
+  --fonte-titulo: 24px;
+  --fonte-destaque: 30px;
+}
